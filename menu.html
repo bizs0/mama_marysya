@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Меню — Мама Маруся | Фуршетные блюда и полуфабрикаты в Мозыре</title>
+  <meta name="description" content="Меню фуршетного мастера Марины: канапе, тарталетки, брускетты, профитроли, салаты, горячее, сладкое, детское меню и домашние полуфабрикаты. Цены указаны, заказ через корзину в Telegram.">
+  <meta property="og:title" content="Меню — Мама Маруся">
+  <meta property="og:description" content="Фуршетное меню и домашние полуфабрикаты с ценами. Соберите заказ в корзине и отправьте в Telegram.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css?v=5">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-in">
+      <a class="logo" href="index.html">
+        <span class="logo-mark">М</span>
+        <span>Мама Маруся<small>фуршеты · полуфабрикаты</small></span>
+      </a>
+      <nav class="nav">
+        <a href="menu.html" style="color: var(--ink)">Меню</a>
+        <a href="index.html#reviews">Отзывы</a>
+        <a href="index.html#faq">Вопросы</a>
+        <a href="index.html#contacts">Контакты</a>
+      </nav>
+      <div class="header-actions">
+        <a class="icon-btn" href="tel:+375297386139" aria-label="Позвонить">
+          <svg class="ic"><use href="assets/icons.svg#i-phone"/></svg>
+        </a>
+        <button class="icon-btn" data-cart-open aria-label="Открыть корзину">
+          <svg class="ic"><use href="assets/icons.svg#i-shopping-basket"/></svg>
+          <span class="cart-badge"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="menu-hero">
+      <div class="container">
+        <h1>Меню</h1>
+        <p class="lead">Собирайте блюда в корзину — состав заказа сам подставится в сообщение в Telegram. Неудобно? Просто позвоните: <a href="tel:+375297386139" style="color: var(--accent); font-weight:700">+375 29 738-61-39</a>.</p>
+        <div class="tabs" id="groupTabs"></div>
+      </div>
+    </section>
+
+    <div class="menu-toolbar">
+      <div class="container menu-toolbar-in">
+        <div class="search-box">
+          <svg class="ic"><use href="assets/icons.svg#i-search"/></svg>
+          <input type="search" id="menuSearch" placeholder="Поиск: канапе, сырники, тарталетки…" autocomplete="off">
+          <button class="icon-btn search-clear" id="searchClear" aria-label="Очистить поиск" style="width:32px;height:32px;border:0">
+            <svg class="ic ic-sm"><use href="assets/icons.svg#i-x"/></svg>
+          </button>
+        </div>
+        <div class="chips" id="catChips"></div>
+      </div>
+    </div>
+
+    <div class="container" id="menuRoot"></div>
+  </main>
+
+  <footer class="footer" style="margin-top: 50px">
+    <div class="container">
+      <div class="footer-in">
+        <a class="logo" href="index.html">
+          <span class="logo-mark">М</span>
+          <span>Мама Маруся</span>
+        </a>
+        <div class="footer-note">Фуршетные столы и домашние полуфабрикаты. Мозырь.</div>
+        <div class="footer-social">
+          <a class="icon-btn" href="tel:+375297386139" aria-label="Позвонить"><svg class="ic"><use href="assets/icons.svg#i-phone"/></svg></a>
+          <a class="icon-btn" href="https://t.me/Mari_Makarevich" target="_blank" rel="noopener" aria-label="Telegram"><svg class="ic"><use href="assets/icons.svg#i-send"/></svg></a>
+          <a class="icon-btn" href="https://www.instagram.com/mama_marysya_" target="_blank" rel="noopener" aria-label="Instagram"><svg class="ic"><use href="assets/icons.svg#i-instagram"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-bottom">© <span id="year"></span> Мама Маруся · Сделано с любовью к вкусной еде</div>
+    </div>
+  </footer>
+
+  <script src="js/data.js?v=2"></script>
+  <script src="js/main.js"></script>
+  <script src="js/menu.js?v=4"></script>
+</body>
+</html>
